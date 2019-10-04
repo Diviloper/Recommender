@@ -25,7 +25,7 @@ class Dataset(object):
         self.people = data['people']
 
 
-class User():
+class User:
 
     def __init__(self, dataset, sectors_si, sectors_no, t_estudis, empresa, pasta) -> None:
         super().__init__()

@@ -1,3 +1,59 @@
 {
-
+  "sectors": {
+    "Tecnologia": false,
+    "Ciències de la salut": false,
+    "Màrketing": false,
+    "Finances": false,
+    "Humanitats": false
+  },
+  "t_estudis": {
+    "Curta duració": false,
+    "Graus mitjans i superiors": false,
+    "Educació universitària": false
+  },
+  "empresa": {
+    "petita": false,
+    "mitjana": false,
+    "gran": false,
+    "multinacional": false
+  },
+  "pasta": {
+    "-20000": false,
+    "20000-40000": false,
+    "40000-80000": false,
+    "80000-160000": false,
+    "160000-500000": false,
+    "+500000": false
+  },
+  "people": [
+    {
+      "sectors": ["Tecnologia", "Màrketing"],
+      "t_estudis": "Educació universitària",
+      "estudis": ["Grau en enginyeria Informàtica", "Màster en e-Commerce"],
+      "empresa": "gran",
+      "pasta": "40000-80000",
+      "anys": 25
+    },
+    {
+      "sectors": ["Ciències de la Salut"],
+      "t_estudis": "Educació universitària",
+      "estudis": ["Grau en Farmàcia"],
+      "empresa": "petita",
+      "pasta": "20000-40000",
+      "anys": 16},
+    {
+      "sectors": ["Humanitats"],
+      "t_estudis": "Graus mitjans i superiors",
+      "estudis": ["Grau superior de pintor de parets"],
+      "empresa": "petita",
+      "pasta": "-20000",
+      "anys": 31},
+    {
+      "sectors": ["Tecnologia"],
+      "t_estudis": "Curta duració",
+      "estudis": ["Curs bootcamp web development"],
+      "empresa": "multinacional",
+      "pasta": "-20000",
+      "anys": 5}
+  ]
 }
