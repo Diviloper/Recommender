@@ -18,6 +18,7 @@ class Dataset(object):
     def __init__(self) -> None:
         super().__init__()
         data = load_data()
+        print(data)
         self.sectors_dataset = data['sectors']
         self.t_estudis_dataset = data['t_estudis']
         self.empresa_dataset = data['empresa']
@@ -52,13 +53,14 @@ def recommend(user, people):
 def new_recommendation():
     data = request.json
 
+    dataset = Dataset()
+
     sectors_si = data['sectorsSi']
     sectors_no = data['sectorsNo']
     t_estudis = data['tEstudis']
     empresa = data['empresa']
     pasta = data['pasta']
 
-    dataset = Dataset()
     user = User(dataset=dataset, sectors_si=sectors_si, sectors_no=sectors_no, t_estudis=t_estudis, empresa=empresa,
                 pasta=pasta)
     return Response(response=recommend(user, dataset.people), status=200, content_type='application/json')
